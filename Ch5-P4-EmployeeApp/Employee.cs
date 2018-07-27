@@ -13,6 +13,7 @@ namespace Ch5_P4_EmployeeApp
         private int empID;
         private float currPay;
         private int empAge;
+        private string empSSN; // Read Only
 
         #region Constructors
 
@@ -26,6 +27,16 @@ namespace Ch5_P4_EmployeeApp
             empID = id;
             empAge = age;
             currPay = pay;
+        }
+
+        public Employee(string name, int age, int id, float pay, string ssn)
+        {
+            Name = name;
+            Age = age;
+            ID = id;
+            Pay = pay;
+            // OOPS! This is no longer possible if the property is read only.
+            //SocialSecurityNumber = ssn;
         }
 
         #endregion
@@ -61,6 +72,11 @@ namespace Ch5_P4_EmployeeApp
             set { currPay = value; }
         }
 
+        public string SocialSecurityNumber
+        {
+            get { return empSSN; }
+        }
+
         #endregion
 
         // Accessor (get method).
@@ -83,7 +99,8 @@ namespace Ch5_P4_EmployeeApp
         // Methods.
         public void GiveBonus(float amount)
         {
-            currPay += amount;
+            Pay += amount;
+            //currPay += amount; // Not recommended
         }
         public void DisplayStats()
         {
