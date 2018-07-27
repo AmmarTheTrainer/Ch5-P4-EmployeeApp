@@ -10,6 +10,7 @@ namespace Ch5_P4_EmployeeApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\n === Encapsulation in C# Programming === \n");
             //Employee emp = new Employee();
 
             ////emp.empName = "Ahmad"; // no access
