@@ -45,10 +45,16 @@ namespace Ch5_P4_EmployeeApp
 
             #region Applying Intrinsic operators on .NET Properties
 
-            Employee joe = new Employee();
+            //Employee joe = new Employee();
             //joe.SetAge(joe.GetAge() + 1);
 
-            joe.Age++;
+            //joe.Age++;
+
+
+            #endregion
+
+            #region Defining Static Properties
+
 
 
             #endregion
