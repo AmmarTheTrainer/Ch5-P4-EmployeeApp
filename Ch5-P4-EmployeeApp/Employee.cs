@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ch5_P4_EmployeeApp
 {
-    class Employee
+    partial class Employee
     {
         // Field data.
         private string empName;
